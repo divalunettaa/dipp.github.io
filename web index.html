@@ -1,0 +1,75 @@
+<html lang="id">
+<head>
+    <title>Personal Web</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #70a2d1;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: rgb(176, 224, 251);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 105px;
+            border-radius: 80%
+       
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #0069fda0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Gambar Profil -->
+    <div class="container">
+        <img src="c:\Users\Diva Lunetta Kencana\Downloads\diva.jpg" alt="Foto Profil">
+
+        <!-- Isi Perkenalan -->
+        <h1>Diva Lunetta Kencana</h1>
+        <h2>1202220184</h2>
+
+        <!-- Link Sosial Media -->
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@_divl" target="_blank">Tiktok</a>
+            <a href="https://www.instagram.com/diva_lunetta" target="_blank">Instagram</a>
+            <a href="https://www.github.com/divalunettaa" target="_blank">Github</a>
+        </div>
+
+        <!-- Tanggal dan Waktu Sekarang -->
+        <div class="footer">
+            <p>Tanggal & Waktu: <span id="datetime"></span></p>
+        </div>
+    </div>
+
+    <!-- Script untuk menampilkan Tanggal dan Waktu -->
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const datetime = now.toLocaleString();
+            document.getElementById("datetime").innerHTML = datetime;
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+
+</body>
+</html>
